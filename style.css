@@ -1,0 +1,220 @@
+:root{
+    --navigation-menu-text-color: #0a0a0a;
+    --section-main-text-color: #139139;
+    --other-text-color: #000000;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Navbar Style */
+.navbar{
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    position: fixed;
+    z-index: 100;
+}
+.navbar .container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.navbar .container img{
+    padding: 5px;
+}
+.navbar .container a{
+    color: var(--navigation-menu-text-color);
+    font-size: 20px;
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+}
+.navbar a:hover{
+    border-bottom: 2px green solid;
+}
+
+/* Background Style */
+.background{
+    position: relative;
+}
+.text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:350px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 30px;
+    color: white;
+}
+
+/* About Us Style */
+.about{
+    width:100%;
+}
+.about h2{
+    color: var(--section-main-text-color);
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    padding:50px;
+}
+.about p{
+    color: var(--other-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: bolder;
+}
+.about .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+    padding: 25px;
+}
+.about .grid img{
+    padding: 0 100px;
+}
+.about .grid h3{
+    color: var(--other-text-color);
+    line-height: 40px;
+    font-weight: bold;
+    padding: 0 100px;
+}
+.about .grid p{
+    color: var(--other-text-color);
+    font-style: normal;
+    font-size: 15px;
+    text-align: left;
+    padding: 0 100px;
+}
+
+/* Awards Style */
+.award{
+    width: 100%;
+}
+.award h2{
+    color: var(--section-main-text-color);
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    padding: 50px;
+}
+.award .grid{
+    display: grid;
+    grid-template-columns: repeat(4 , 4fr);
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+.award .grid p{
+    color: var(--other-text-color);
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Get in touch section */
+.getintouch{
+    width: 100%;
+}
+.getintouch h2{
+    color: var(--section-main-text-color);
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    padding: 50px;
+}
+.getintouch .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    padding: 0px 100px 100px 100px;
+}
+.getintouch .grid .form{
+    height: 600px;
+    width: 600px;
+    background-color: whitesmoke;
+    border-radius: 20px;
+    padding: 50px;
+}
+.getintouch .grid .details h3{
+    color: var(--other-text-color);
+    font-size: 22px;
+    font-weight: bolder;
+    line-height: 50px;
+}
+.getintouch .grid .details h5{
+    color: var(--other-text-color);
+    font-size: 18px;
+    line-height: 30px;
+}
+.getintouch .grid .details p{
+    color: var(--other-text-color);
+    font-size: 15px;
+    line-height: 35px;
+}
+.getintouch .grid .details .contactus .grid{
+    display: grid;
+    grid-template-columns: 0px 500px;
+    padding: 10px;
+    gap: 30px;
+}
+.getintouch .grid .details .contactus .grid span{
+    padding: 5px;
+}
+.getintouch .grid .details .contactus .grid p{
+    font-size: 13px;
+}
+.getintouch .grid .details a{
+    display: grid;
+    text-decoration: none;
+    color: var(--other-text-color);
+    font-size: 13px;
+    line-height: 30px;
+    width: 200px;
+}
+.getintouch .grid .details a:hover{
+    color: green;
+}
+
+/* Footer Section  */
+.footer{
+    width: 100%;
+    height: 55px;
+    background-color: #139139;
+}
+.footer .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    padding: 10px;
+}
+.footer .container p{
+    color: white;
+    font-size: 14px;
+    padding: 5px;
+}
+.footer .container .fa{
+    padding: 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.footer .container .fa:hover{
+    opacity: 0.7;
+}
+.footer .container .fa-facebook{
+    color: white;
+}
+.footer .container .fa-twitter{
+    color: white;
+}
+.footer .container .fa-instagram{
+    color: white;
+}
